@@ -56,4 +56,19 @@ public class LoginPage {
         return productsText.getText();
     }
 
+    public void loginIfNecessary(String username, String password) {
+        try {
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
+            if (usernameField.isDisplayed()) {
+                enterUsername(username);
+                enterPassword(password);
+                clickLogin();
+            }
+        } catch (Exception e) {
+            // Already logged in or login elements not present
+        } finally {
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        }
+    }
+
 }

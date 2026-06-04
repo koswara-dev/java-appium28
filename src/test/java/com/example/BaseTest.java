@@ -2,8 +2,8 @@ package com.example;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 
 import java.net.MalformedURLException;
 import java.net.URI;
@@ -13,7 +13,7 @@ import java.time.Duration;
 public class BaseTest {
     protected AndroidDriver driver;
 
-    @BeforeClass
+    @BeforeMethod
     public void setUp() throws MalformedURLException {
         // Configure options for Android UiAutomator2
         UiAutomator2Options options = new UiAutomator2Options();
@@ -40,7 +40,7 @@ public class BaseTest {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
-    @AfterClass
+    @AfterMethod
     public void tearDown() {
         if (driver != null) {
             driver.quit();

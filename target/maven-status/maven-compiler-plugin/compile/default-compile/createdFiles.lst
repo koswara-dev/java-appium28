@@ -1,3 +1,4 @@
 com\example\pages\CalculatorPage.class
 com\example\pages\LoginPage.class
 com\example\utils\Utils.class
+com\example\pages\InventoryPage.class

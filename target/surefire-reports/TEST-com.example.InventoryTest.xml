@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.LoginTest" time="35.621" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.InventoryTest" time="63.868" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,9 +15,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ID"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
-    <property name="sun.java.command" value="C:\Users\Lenovo\AppData\Local\Temp\surefire17702653811277770228\surefirebooter-20260604202510946_3.jar C:\Users\Lenovo\AppData\Local\Temp\surefire17702653811277770228 2026-06-04T20-25-10_824-jvmRun1 surefire-20260604202510946_1tmp surefire_0-20260604202510946_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\Lenovo\AppData\Local\Temp\surefire1448485528857481170\surefirebooter-20260604212257928_3.jar C:\Users\Lenovo\AppData\Local\Temp\surefire1448485528857481170 2026-06-04T21-22-57_651-jvmRun1 surefire-20260604212257928_1tmp surefire_0-20260604212257928_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="test" value="LoginTest"/>
+    <property name="test" value="InventoryTest"/>
     <property name="surefire.test.class.path" value="C:\Projects\automation\sqabatch28\java-appium\target\test-classes;C:\Projects\automation\sqabatch28\java-appium\target\classes;C:\Users\Lenovo\.m2\repository\io\appium\java-client\10.1.1\java-client-10.1.1.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-api\4.44.0\selenium-api-4.44.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.44.0\selenium-remote-driver-4.44.0.jar;C:\Users\Lenovo\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\Lenovo\.m2\repository\com\google\guava\guava\33.6.0-jre\guava-33.6.0-jre.jar;C:\Users\Lenovo\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\Lenovo\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Lenovo\.m2\repository\com\google\j2objc\j2objc-annotations\3.1\j2objc-annotations-3.1.jar;C:\Users\Lenovo\.m2\repository\io\opentelemetry\opentelemetry-api\1.62.0\opentelemetry-api-1.62.0.jar;C:\Users\Lenovo\.m2\repository\io\opentelemetry\opentelemetry-context\1.62.0\opentelemetry-context-1.62.0.jar;C:\Users\Lenovo\.m2\repository\io\opentelemetry\opentelemetry-common\1.62.0\opentelemetry-common-1.62.0.jar;C:\Users\Lenovo\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.62.0\opentelemetry-exporter-logging-1.62.0.jar;C:\Users\Lenovo\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.62.0\opentelemetry-sdk-common-1.62.0.jar;C:\Users\Lenovo\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.62.0\opentelemetry-sdk-extension-autoconfigure-spi-1.62.0.jar;C:\Users\Lenovo\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.62.0\opentelemetry-sdk-extension-autoconfigure-1.62.0.jar;C:\Users\Lenovo\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.62.0\opentelemetry-sdk-trace-1.62.0.jar;C:\Users\Lenovo\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.62.0\opentelemetry-sdk-1.62.0.jar;C:\Users\Lenovo\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.62.0\opentelemetry-sdk-metrics-1.62.0.jar;C:\Users\Lenovo\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.62.0\opentelemetry-sdk-logs-1.62.0.jar;C:\Users\Lenovo\.m2\repository\net\bytebuddy\byte-buddy\1.18.8-jdk5\byte-buddy-1.18.8-jdk5.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-http\4.44.0\selenium-http-4.44.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-json\4.44.0\selenium-json-4.44.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.44.0\selenium-manager-4.44.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-os\4.44.0\selenium-os-4.44.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-support\4.44.0\selenium-support-4.44.0.jar;C:\Users\Lenovo\.m2\repository\com\google\code\gson\gson\2.13.2\gson-2.13.2.jar;C:\Users\Lenovo\.m2\repository\com\google\errorprone\error_prone_annotations\2.41.0\error_prone_annotations-2.41.0.jar;C:\Users\Lenovo\.m2\repository\org\slf4j\slf4j-api\2.0.17\slf4j-api-2.0.17.jar;C:\Users\Lenovo\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\Lenovo\.m2\repository\org\testng\testng\7.12.0\testng-7.12.0.jar;C:\Users\Lenovo\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\Lenovo\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\Lenovo"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Lenovo\AppData\Local\Temp\surefire17702653811277770228\surefirebooter-20260604202510946_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Lenovo\AppData\Local\Temp\surefire1448485528857481170\surefirebooter-20260604212257928_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.7+8-LTS-245"/>
@@ -59,32 +59,18 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testLoginWithInvalidCredentials[standard_user, 123456, Username and password do not match any user in this service.](1)" classname="com.example.LoginTest" time="7.497">
-    <system-out><![CDATA[Test Login dengan username: 'standard_user' dan password: '123456' berhasil memicu error: 'Username and password do not match any user in this service.'
+  <testcase name="testAddToCartThreeItems" classname="com.example.InventoryTest" time="34.064">
+    <system-out><![CDATA[Test Add to Cart 3 items sekaligus dengan scroll Android berhasil!
 ]]></system-out>
     <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
 SLF4J(W): Defaulting to no-operation (NOP) logger implementation
 SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
 ]]></system-err>
   </testcase>
-  <testcase name="testLoginWithInvalidCredentials[locked_out_user, secret_sauce, Sorry, this user has been locked out.](2)" classname="com.example.LoginTest" time="3.092">
-    <system-out><![CDATA[Test Login dengan username: 'locked_out_user' dan password: 'secret_sauce' berhasil memicu error: 'Sorry, this user has been locked out.'
-]]></system-out>
-  </testcase>
-  <testcase name="testLoginWithInvalidCredentials[invalid_user, secret_sauce, Username and password do not match any user in this service.](3)" classname="com.example.LoginTest" time="3.492">
-    <system-out><![CDATA[Test Login dengan username: 'invalid_user' dan password: 'secret_sauce' berhasil memicu error: 'Username and password do not match any user in this service.'
-]]></system-out>
-  </testcase>
-  <testcase name="testLoginWithInvalidCredentials[, secret_sauce, Username is required](4)" classname="com.example.LoginTest" time="3.4">
-    <system-out><![CDATA[Test Login dengan username: '' dan password: 'secret_sauce' berhasil memicu error: 'Username is required'
-]]></system-out>
-  </testcase>
-  <testcase name="testLoginWithInvalidCredentials[standard_user, , Password is required](5)" classname="com.example.LoginTest" time="3.871">
-    <system-out><![CDATA[Test Login dengan username: 'standard_user' dan password: '' berhasil memicu error: 'Password is required'
-]]></system-out>
-  </testcase>
-  <testcase name="testLoginWithValidCredentials" classname="com.example.LoginTest" time="4.083">
-    <system-out><![CDATA[Test Login dengan kredensial valid berhasil
+  <testcase name="testInventoryItemDetails" classname="com.example.InventoryTest" time="8.38">
+    <system-out><![CDATA[Test Detail Inventory berhasil
+Nama Barang: Sauce Labs Bike Light
+Harga Barang: $29.99
 ]]></system-out>
   </testcase>
 </testsuite>
