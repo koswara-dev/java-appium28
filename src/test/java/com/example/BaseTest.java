@@ -26,8 +26,8 @@ public class BaseTest {
 
         // Target the default Android Settings app for a generic, out-of-the-box smoke
         // test
-        options.setAppPackage("com.google.android.calculator");
-        options.setAppActivity("com.android.calculator2.Calculator");
+        options.setAppPackage("com.swaglabsmobileapp");
+        options.setAppActivity(".MainActivity");
 
         // Session settings
         options.setNoReset(true);
