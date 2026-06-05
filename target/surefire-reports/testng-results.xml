@@ -1,33 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-04T21:22:59 WIB" name="Surefire suite" finished-at="2026-06-04T21:24:02 WIB" duration-ms="62556">
+  <suite started-at="2026-06-05T19:55:34 WIB" name="Surefire suite" finished-at="2026-06-05T19:56:40 WIB" duration-ms="66097">
     <groups>
     </groups>
-    <test started-at="2026-06-04T21:22:59 WIB" name="Surefire test" finished-at="2026-06-04T21:24:02 WIB" duration-ms="62556">
+    <test started-at="2026-06-05T19:55:34 WIB" name="Surefire test" finished-at="2026-06-05T19:56:40 WIB" duration-ms="66097">
       <class name="com.example.InventoryTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.InventoryTest@77167fb7]" started-at="2026-06-04T21:23:00 WIB" name="setUp" finished-at="2026-06-04T21:23:11 WIB" duration-ms="11206" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.InventoryTest@6ce139a4]" started-at="2026-06-05T19:55:34 WIB" name="setUp" finished-at="2026-06-05T19:55:43 WIB" duration-ms="8676" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testAddToCartThreeItems()[pri:0, instance:com.example.InventoryTest@77167fb7]" started-at="2026-06-04T21:23:11 WIB" name="testAddToCartThreeItems" description="Menambahkan 3 item ke keranjang belanja sekaligus menggunakan scroll Android" finished-at="2026-06-04T21:23:45 WIB" duration-ms="34061" status="PASS">
+        <test-method signature="testAddToCartThreeItems()[pri:0, instance:com.example.InventoryTest@6ce139a4]" started-at="2026-06-05T19:55:43 WIB" name="testAddToCartThreeItems" description="Menambahkan 3 item ke keranjang belanja sekaligus menggunakan scroll Android" finished-at="2026-06-05T19:55:56 WIB" duration-ms="13002" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddToCartThreeItems -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.InventoryTest@77167fb7]" started-at="2026-06-04T21:23:45 WIB" name="tearDown" finished-at="2026-06-04T21:23:45 WIB" duration-ms="567" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.InventoryTest@6ce139a4]" started-at="2026-06-05T19:55:56 WIB" name="tearDown" finished-at="2026-06-05T19:55:57 WIB" duration-ms="644" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.InventoryTest@77167fb7]" started-at="2026-06-04T21:23:45 WIB" name="setUp" finished-at="2026-06-04T21:23:53 WIB" duration-ms="7732" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.InventoryTest@6ce139a4]" started-at="2026-06-05T19:55:57 WIB" name="setUp" finished-at="2026-06-05T19:56:05 WIB" duration-ms="8634" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testInventoryItemDetails()[pri:0, instance:com.example.InventoryTest@77167fb7]" started-at="2026-06-04T21:23:53 WIB" name="testInventoryItemDetails" description="Menampilkan detail harga dan nama barang pada halaman inventory" finished-at="2026-06-04T21:24:01 WIB" duration-ms="8380" status="PASS">
+        <test-method signature="testInventoryItemCount()[pri:0, instance:com.example.InventoryTest@6ce139a4]" started-at="2026-06-05T19:56:05 WIB" name="testInventoryItemCount" description="Verifikasi jumlah item pada halaman inventory" finished-at="2026-06-05T19:56:12 WIB" duration-ms="7061" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInventoryItemCount -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.InventoryTest@6ce139a4]" started-at="2026-06-05T19:56:12 WIB" name="tearDown" finished-at="2026-06-05T19:56:13 WIB" duration-ms="545" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.InventoryTest@6ce139a4]" started-at="2026-06-05T19:56:13 WIB" name="setUp" finished-at="2026-06-05T19:56:19 WIB" duration-ms="6339" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testInventoryItemDetails()[pri:0, instance:com.example.InventoryTest@6ce139a4]" started-at="2026-06-05T19:56:19 WIB" name="testInventoryItemDetails" description="Menampilkan detail harga dan nama barang pada halaman inventory" finished-at="2026-06-05T19:56:26 WIB" duration-ms="6880" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInventoryItemDetails -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.InventoryTest@77167fb7]" started-at="2026-06-04T21:24:01 WIB" name="tearDown" finished-at="2026-06-04T21:24:02 WIB" duration-ms="535" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.InventoryTest@6ce139a4]" started-at="2026-06-05T19:56:26 WIB" name="tearDown" finished-at="2026-06-05T19:56:27 WIB" duration-ms="533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.InventoryTest@6ce139a4]" started-at="2026-06-05T19:56:27 WIB" name="setUp" finished-at="2026-06-05T19:56:33 WIB" duration-ms="6710" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testInventoryItemNamesAndPrices()[pri:0, instance:com.example.InventoryTest@6ce139a4]" started-at="2026-06-05T19:56:33 WIB" name="testInventoryItemNamesAndPrices" description="Verifikasi nama dan harga barang" finished-at="2026-06-05T19:56:40 WIB" duration-ms="6574" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInventoryItemNamesAndPrices -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.InventoryTest@6ce139a4]" started-at="2026-06-05T19:56:40 WIB" name="tearDown" finished-at="2026-06-05T19:56:40 WIB" duration-ms="428" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

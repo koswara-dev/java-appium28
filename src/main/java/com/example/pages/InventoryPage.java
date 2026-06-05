@@ -1,6 +1,7 @@
 package com.example.pages;
 
 import java.time.Duration;
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -26,8 +27,15 @@ public class InventoryPage {
     @AndroidFindBy(xpath = "//android.widget.TextView[@text='Sauce Labs Bike Light']")
     private WebElement itemName;
 
+    // Find all product name using xpath
+    @AndroidFindBy(xpath = "//android.widget.TextView[@content-desc=\"test-Item title\"]")
+    private List<WebElement> productNames;
+
+    @AndroidFindBy(xpath = "//android.widget.TextView[@content-desc=\"test-Price\"]")
+    private List<WebElement> productPrices;
+
     @AndroidFindBy(xpath = "//android.view.ViewGroup[@content-desc='test-Cart']//android.widget.TextView")
-    private java.util.List<WebElement> cartBadgeList;
+    private List<WebElement> cartBadgeList;
 
     @AndroidFindBy(accessibility = "test-Menu")
     private WebElement menuButton;
@@ -66,6 +74,14 @@ public class InventoryPage {
             return "0";
         }
         return cartBadgeList.get(0).getText();
+    }
+
+    public List<WebElement> getProductNames() {
+        return productNames;
+    }
+
+    public List<WebElement> getProductPrices() {
+        return productPrices;
     }
 
 }

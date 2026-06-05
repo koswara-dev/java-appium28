@@ -1,5 +1,8 @@
 package com.example;
 
+import java.util.List;
+
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -51,5 +54,44 @@ public class InventoryTest extends BaseTest {
         Assert.assertEquals(inventoryPage.getCartBadgeCount(), "3", "Gagal menambahkan 3 item ke keranjang");
 
         System.out.println("Test Add to Cart 3 items sekaligus dengan scroll Android berhasil!");
+    }
+
+    @Test(description = "Verifikasi jumlah item pada halaman inventory")
+    public void testInventoryItemCount() {
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.loginIfNecessary("standard_user", "secret_sauce");
+
+        InventoryPage inventoryPage = new InventoryPage(driver);
+
+        List<WebElement> productNames = inventoryPage.getProductNames();
+        int expectedCount = 2;
+
+        Assert.assertEquals(productNames.size(), expectedCount, "Jumlah item tidak sesuai");
+
+        System.out.println("Test Jumlah Item pada halaman inventory berhasil!");
+        System.out.println("Jumlah item: " + productNames.size());
+    }
+
+    @Test(description = "Verifikasi nama dan harga barang")
+    public void testInventoryItemNamesAndPrices() {
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.loginIfNecessary("standard_user", "secret_sauce");
+
+        InventoryPage inventoryPage = new InventoryPage(driver);
+
+        List<WebElement> productNames = inventoryPage.getProductNames();
+        List<WebElement> productPrices = inventoryPage.getProductPrices();
+
+        Assert.assertEquals(productNames.size(), 2, "Jumlah item tidak sesuai");
+        Assert.assertEquals(productPrices.size(), 2, "Jumlah harga tidak sesuai");
+
+        System.out.println("Test Nama dan Harga Barang pada halaman inventory berhasil!");
+        for (WebElement productName : productNames) {
+            System.out.println("Nama Barang: " + productName.getText());
+        }
+
+        for (WebElement productPrice : productPrices) {
+            System.out.println("Harga Barang: " + productPrice.getText());
+        }
     }
 }
