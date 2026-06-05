@@ -1,6 +1,9 @@
 package com.example;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -93,5 +96,48 @@ public class InventoryTest extends BaseTest {
         for (WebElement productPrice : productPrices) {
             System.out.println("Harga Barang: " + productPrice.getText());
         }
+    }
+
+    @Test(description = "Menambahkan 2 item dengan harga termurah ke keranjang belanja menggunakan HashMap")
+    public void testAddToCartTwoCheapestItems() {
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.loginIfNecessary("standard_user", "secret_sauce");
+
+        InventoryPage inventoryPage = new InventoryPage(driver);
+
+        List<WebElement> productNames = inventoryPage.getProductNames();
+        List<WebElement> productPrices = inventoryPage.getProductPrices();
+
+        Assert.assertTrue(productNames.size() >= 2, "Jumlah produk di layar kurang dari 2");
+
+        // Masukkan nama dan harga produk ke dalam Map (HashMap)
+        Map<String, Double> productMap = new HashMap<>();
+        for (int i = 0; i < productNames.size(); i++) {
+            String name = productNames.get(i).getText();
+            String priceText = productPrices.get(i).getText().replace("$", "");
+            double price = Double.parseDouble(priceText);
+            productMap.put(name, price);
+        }
+
+        // Urutkan item berdasarkan harga termurah
+        List<Map.Entry<String, Double>> sortedItems = new ArrayList<>(productMap.entrySet());
+        sortedItems.sort(Map.Entry.comparingByValue());
+
+        // Ambil 2 item termurah
+        String cheapestItem1 = sortedItems.get(0).getKey();
+        double price1 = sortedItems.get(0).getValue();
+        String cheapestItem2 = sortedItems.get(1).getKey();
+        double price2 = sortedItems.get(1).getValue();
+
+        System.out.println("2 Item termurah:");
+        System.out.println("1. " + cheapestItem1 + " ($" + price1 + ")");
+        System.out.println("2. " + cheapestItem2 + " ($" + price2 + ")");
+
+        // Tambahkan ke keranjang
+        inventoryPage.addItemToCart(cheapestItem1);
+        inventoryPage.addItemToCart(cheapestItem2);
+
+        // Verifikasi total item di keranjang belanja adalah 2
+        Assert.assertEquals(inventoryPage.getCartBadgeCount(), "2", "Gagal menambahkan 2 item termurah ke keranjang");
     }
 }
